@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Reporter;
 
 public class ExcelDataClass implements Constants {
-	public static Object getData(String excel_path, String sheetname, int row_number, int cell_number) {
+	public static Object getData(String sheetname, int row_number, int cell_number) {
 		Object value = null;
 		try {
 			File f = new File(excel_path);

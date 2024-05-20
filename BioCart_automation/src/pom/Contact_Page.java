@@ -1,5 +1,7 @@
 package pom;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,7 +38,7 @@ public class Contact_Page extends Verification {
 		usernameField.sendKeys("ecoders");
 	}
 
-	public static void verifyContactPageTitle(String exceptedtitle) {
+	public  void verifyContactPageTitle(String exceptedtitle) throws IOException {
 		verifyAllTitles(exceptedtitle);
 	}
 
